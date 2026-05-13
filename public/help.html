@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كيفية التحميل - Arise Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background: #f5f7fa;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 20px;
+        }
+        
+        .option-box {
+            display: grid;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .option {
+            border-right: 4px solid #667eea;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .option strong {
+            display: block;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        
+        .option p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+        
+        .btn:hover {
+            background: #764ba2;
+            text-decoration: none;
+        }
+        
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+        
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+        
+        .note {
+            background: #fff3cd;
+            border-right: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 20px 0;
+        }
+        
+        footer {
+            text-align: center;
+            color: #999;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Arise - Next.js Project</h1>
+            <p>كيفية تحميل واستخدام المشروع</p>
+        </header>
+        
+        <div class="card">
+            <h2>خيارات التحميل</h2>
+            <div class="option-box">
+                <div class="option">
+                    <strong>1. تحميل الملف الكامل</strong>
+                    <p>احصل على المشروع كاملاً بصيغة TAR.GZ (13 MB)</p>
+                    <div class="btn-group">
+                        <a href="/arise-nextjs.tar.gz" class="btn" download>📥 تحميل الآن</a>
+                        <a href="/download.html" class="btn btn-secondary">معلومات التحميل</a>
+                    </div>
+                </div>
+                
+                <div class="option">
+                    <strong>2. قراءة التعليمات</strong>
+                    <p>خطوات التثبيت والتشغيل خطوة بخطوة</p>
+                    <div class="btn-group">
+                        <a href="/INSTRUCTIONS.txt" class="btn" download>📄 التعليمات الكاملة</a>
+                    </div>
+                </div>
+                
+                <div class="option">
+                    <strong>3. معاينة الموقع أونلاين</strong>
+                    <p>شاهد الموقع الآن مباشرة بدون تحميل</p>
+                    <div class="btn-group">
+                        <a href="/" class="btn">🌐 الصفحة الرئيسية</a>
+                        <a href="/contact.html" class="btn btn-secondary">📧 التواصل</a>
+                        <a href="/works.html" class="btn btn-secondary">🎨 الأعمال</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>متطلبات التشغيل</h2>
+            <p>قبل تحميل واستخدام المشروع، تأكد من تثبيت:</p>
+            <div class="option-box">
+                <div class="option">
+                    <strong>Node.js (18+)</strong>
+                    <p><a href="https://nodejs.org" target="_blank">تحميل من nodejs.org</a></p>
+                </div>
+                <div class="option">
+                    <strong>npm أو pnpm</strong>
+                    <p>يأتي npm مع Node.js مباشرة</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2>خطوات التثبيت بسرعة</h2>
+            <ol style="padding-right: 20px;">
+                <li>استخرج ملف arise-nextjs.tar.gz</li>
+                <li>افتح Terminal/CMD في المجلد</li>
+                <li>اكتب: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 3px;">npm install</code></li>
+                <li>اكتب: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 3px;">npm run dev</code></li>
+                <li>افتح: <code style="background: #f0f0f0; padding: 4px 8px; border-radius: 3px;">http://localhost:3000</code></li>
+            </ol>
+        </div>
+        
+        <div class="note">
+            <strong>💡 نصيحة:</strong> إذا واجهت أي مشكلة، راجع ملف التعليمات الكامل
+        </div>
+        
+        <footer>
+            <p>تم إنشاؤه بـ Next.js 15 + React 18 | جميع الحقوق محفوظة</p>
+        </footer>
+    </div>
+</body>
+</html>

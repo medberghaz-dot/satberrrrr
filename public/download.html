@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تحميل Arise - Next.js Project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 28px;
+        }
+        
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        .download-section {
+            margin: 30px 0;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .info-box {
+            background: #f5f5f5;
+            border-right: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+            text-align: right;
+        }
+        
+        .info-box h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        
+        .info-box p {
+            color: #666;
+            line-height: 1.6;
+            font-size: 14px;
+        }
+        
+        .file-info {
+            color: #999;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        
+        .steps {
+            text-align: right;
+            margin: 30px 0;
+        }
+        
+        .steps ol {
+            display: inline-block;
+            text-align: right;
+        }
+        
+        .steps li {
+            color: #666;
+            margin: 10px 0;
+            line-height: 1.8;
+        }
+        
+        .steps strong {
+            color: #333;
+        }
+        
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            direction: ltr;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Arise - Next.js Project</h1>
+        <p class="subtitle">احصل على المشروع الكامل على حاسوبك</p>
+        
+        <div class="download-section">
+            <a href="arise-nextjs.tar.gz" class="download-btn" download>📥 تحميل المشروع (13 MB)</a>
+        </div>
+        
+        <div class="info-box">
+            <h3>المتطلبات:</h3>
+            <p>
+                • Node.js 18+ <a href="https://nodejs.org" target="_blank">تحميل</a><br>
+                • npm أو pnpm<br>
+                • محرر نصوص (مثل VS Code)
+            </p>
+        </div>
+        
+        <div class="steps">
+            <h3>خطوات التثبيت:</h3>
+            <ol>
+                <li><strong>استخرج الملف:</strong> اضغط على الملف بزر الماوس الأيمن واختر Extract</li>
+                <li><strong>افتح Terminal/CMD</strong> في المجلد المستخرج</li>
+                <li><strong>ثبت الحزم:</strong> <code>npm install</code></li>
+                <li><strong>شغّل المشروع:</strong> <code>npm run dev</code></li>
+                <li><strong>افتح المتصفح:</strong> http://localhost:3000</li>
+            </ol>
+        </div>
+        
+        <div class="file-info">
+            📦 الملف: arise-nextjs.tar.gz<br>
+            📊 الحجم: 13 MB (بدون node_modules)<br>
+            ⚙️ Next.js 15 + React 18 + TypeScript
+        </div>
+        
+        <div class="info-box" style="margin-top: 30px;">
+            <h3>ماذا في المشروع؟</h3>
+            <p>
+                ✓ جميع صفحات الموقع<br>
+                ✓ كل الصور والأيقونات<br>
+                ✓ الـ Styles والتأثيرات الكاملة<br>
+                ✓ جاهز للنشر على Vercel
+            </p>
+        </div>
+    </div>
+</body>
+</html>
