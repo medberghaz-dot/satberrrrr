@@ -36,25 +36,15 @@ export async function GET(
 
     const html = await fs.readFile(filePath, 'utf-8');
     
-    // Extract just the body content
-    const bodyMatch = html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
-    if (!bodyMatch) {
-      return NextResponse.json(
-        { error: 'Could not parse HTML' },
-        { status: 500 }
-      );
-    }
-
-    return new NextResponse(bodyMatch[1], {
+    // Return the complete HTML file as-is to preserve all styles and scripts
+    return new NextResponse(html, {
       headers: {
         'Content-Type': 'text/html; charset=utf-8',
+        'Cache-Control': 'public, max-age=3600',
       },
     });
   } catch (error) {
     console.error('Error loading page:', error);
-    return NextResponse.json(
-      { error: 'Failed to load page' },
-      { status: 500 }
-    );
+    return new NextResponse('Page not found', { status: 404 });
   }
 }

@@ -1,26 +1,6 @@
-'use client';
-
-import { useEffect, useState } from 'react';
+import { redirect } from 'next/navigation';
 
 export default function HomePage() {
-  const [html, setHtml] = useState<string>('');
-
-  useEffect(() => {
-    fetch('/api/pages/home')
-      .then(res => res.text())
-      .then(data => {
-        setHtml(data);
-      })
-      .catch(err => {
-        console.error('Failed to load page:', err);
-      });
-  }, []);
-
-  if (!html) {
-    return <div style={{ padding: '40px', textAlign: 'center' }}>Loading...</div>;
-  }
-
-  return (
-    <div dangerouslySetInnerHTML={{ __html: html }} />
-  );
+  // Serve the Framer HTML file directly from public
+  redirect('/index.html');
 }
