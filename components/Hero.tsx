@@ -19,52 +19,50 @@ export default function Hero({
   ctaMessage,
 }: HeroProps) {
   return (
-    <section className="w-full bg-gradient-to-b from-blue-50 via-white to-light py-24 md:py-40 relative overflow-hidden">
-      {/* Decorative elements */}
-      <div className="absolute top-10 right-10 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"></div>
-      <div className="absolute bottom-10 left-10 w-72 h-72 bg-green-100 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"></div>
-
-      <div className="max-w-5xl mx-auto px-4 text-center animate-fade-in relative z-10">
-        <div className="inline-block mb-6 px-4 py-2 bg-blue-100 text-[#0066CC] rounded-full font-semibold text-sm">
-          خدمات التسويق الرقمي الطبي
+    <section className="w-full bg-white py-32 md:py-48 relative overflow-hidden">
+      <div className="max-w-5xl mx-auto px-6 text-center animate-fade-in">
+        <div className="mb-8">
+          <span className="inline-block text-sm tracking-widest text-[var(--color-accent)] font-semibold uppercase">
+            التسويق الرقمي الطبي
+          </span>
         </div>
 
-        <h1 className="text-5xl md:text-7xl font-bold text-dark mb-8 leading-tight">
+        <h1 className="text-6xl md:text-7xl font-light text-[var(--color-foreground)] mb-8 leading-tight tracking-tight">
           {titleAr}
         </h1>
         
-        <p className="text-lg md:text-2xl text-muted mb-12 max-w-3xl mx-auto leading-relaxed font-light">
+        <p className="text-xl md:text-2xl text-[var(--color-foreground-muted)] mb-16 max-w-3xl mx-auto leading-relaxed font-light">
           {descriptionAr}
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
           <WhatsAppButton
             message={ctaMessage}
-            text="احجز استشارة عبر واتساب"
+            text="احجز استشارة"
             variant="primary"
             size="lg"
           />
-          <button className="px-8 py-4 border-2 border-[#0066CC] text-[#0066CC] font-semibold rounded-lg hover:bg-blue-50 transition-all duration-300 text-lg hover:shadow-lg">
+          <button className="px-10 py-4 border-2 border-[var(--color-primary)] text-[var(--color-primary)] font-semibold rounded-sm hover:bg-[var(--color-primary)] hover:text-white transition-all duration-300 text-lg">
             اعرف أكثر
           </button>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-20 pt-12 border-t border-gray-200">
-          <div className="text-center">
-            <p className="text-4xl font-bold text-[#0066CC]">50+</p>
-            <p className="text-muted mt-2">عميل سعيد</p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-12 mt-32 pt-16 border-t border-[var(--color-border)]">
+          <div>
+            <p className="text-4xl font-light text-[var(--color-primary)] mb-2">50+</p>
+            <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wide">عميل</p>
           </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-[#0066CC]">150%</p>
-            <p className="text-muted mt-2">زيادة متوسطة</p>
+          <div>
+            <p className="text-4xl font-light text-[var(--color-primary)] mb-2">150%</p>
+            <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wide">نمو متوسط</p>
           </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-[#0066CC]">6+</p>
-            <p className="text-muted mt-2">سنوات خبرة</p>
+          <div>
+            <p className="text-4xl font-light text-[var(--color-primary)] mb-2">6+</p>
+            <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wide">سنوات</p>
           </div>
-          <div className="text-center">
-            <p className="text-4xl font-bold text-[#0066CC]">24/7</p>
-            <p className="text-muted mt-2">دعم متواصل</p>
+          <div>
+            <p className="text-4xl font-light text-[var(--color-primary)] mb-2">24/7</p>
+            <p className="text-sm text-[var(--color-text-muted)] uppercase tracking-wide">دعم</p>
           </div>
         </div>
       </div>

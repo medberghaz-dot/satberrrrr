@@ -12,44 +12,40 @@ export default function Header({ lang = 'ar' }: HeaderProps) {
   const logo = 'مِراس';
   const menuItems = isArabic
     ? [
-        { label: 'الرئيسية', href: '#' },
-        { label: 'من نحن', href: '#about' },
-        { label: 'الخدمات', href: '#services' },
-        { label: 'آراء عملائنا', href: '#testimonials' },
-        { label: 'تواصل معنا', href: '#contact' },
+        { label: 'الرئيسية', href: '/' },
+        { label: 'من نحن', href: '/about' },
+        { label: 'الخدمات', href: '/services' },
+        { label: 'آراء عملائنا', href: '/testimonials' },
+        { label: 'تواصل معنا', href: '/contact' },
       ]
     : [
-        { label: 'Home', href: '#' },
-        { label: 'About', href: '#about' },
-        { label: 'Services', href: '#services' },
-        { label: 'Testimonials', href: '#testimonials' },
-        { label: 'Contact', href: '#contact' },
+        { label: 'Home', href: '/' },
+        { label: 'About', href: '/about' },
+        { label: 'Services', href: '/services' },
+        { label: 'Testimonials', href: '/testimonials' },
+        { label: 'Contact', href: '/contact' },
       ];
 
   return (
-    <header className="w-full bg-white border-b border-gray-200 sticky top-0 z-50 shadow-sm">
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-        <div className="flex-1">
-          <a href="/" className="text-2xl font-bold text-[#0066CC]">
-            {logo}
-          </a>
-        </div>
+    <header className="w-full bg-white border-b border-[var(--color-border)] sticky top-0 z-50">
+      <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+        <a href="/" className="text-2xl font-light tracking-wide text-[var(--color-primary)]">
+          {logo}
+        </a>
         
-        <nav className="flex-1 hidden md:flex justify-center gap-8">
+        <nav className="hidden md:flex gap-12">
           {menuItems.map((item) => (
             <a
               key={item.label}
               href={item.href}
-              className="text-gray-700 hover:text-[#0066CC] transition-colors duration-200 font-medium"
+              className="text-sm text-[var(--color-foreground-muted)] hover:text-[var(--color-primary)] transition-colors duration-300 font-medium tracking-wide"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <div className="flex-1 flex justify-end">
-          <button className="md:hidden text-[#0066CC] text-2xl">☰</button>
-        </div>
+        <button className="md:hidden text-[var(--color-foreground)] text-2xl">☰</button>
       </div>
     </header>
   );

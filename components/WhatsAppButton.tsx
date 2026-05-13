@@ -20,18 +20,18 @@ export default function WhatsAppButton({
 }: WhatsAppButtonProps) {
   const link = generateWhatsAppLink({ message });
 
-  const baseStyles = 'inline-block font-semibold rounded-lg transition-all duration-300 hover:shadow-lg active:scale-95';
+  const baseStyles = 'inline-block font-semibold rounded-sm transition-all duration-300 active:scale-95';
   
   const variantStyles = {
-    primary: 'bg-[#0066CC] text-white hover:bg-blue-700',
-    secondary: 'bg-[#00CC88] text-white hover:bg-green-600',
-    outline: 'border-2 border-[#0066CC] text-[#0066CC] hover:bg-blue-50',
+    primary: 'bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-light)]',
+    secondary: 'bg-[var(--color-accent)] text-[var(--color-foreground)] hover:bg-opacity-90',
+    outline: 'border-2 border-[var(--color-primary)] text-[var(--color-primary)] hover:bg-[var(--color-primary)] hover:text-white',
   };
 
   const sizeStyles = {
     sm: 'px-4 py-2 text-sm',
     md: 'px-6 py-3 text-base',
-    lg: 'px-8 py-4 text-lg',
+    lg: 'px-10 py-4 text-base tracking-wide uppercase',
   };
 
   return (
