@@ -10,13 +10,13 @@ interface TestimonialsProps {
 
 export default function Testimonials({ testimonials }: TestimonialsProps) {
   return (
-    <section id="testimonials" className="w-full bg-[var(--color-surface-alt)] py-32 relative">
+    <section id="testimonials" className="w-full bg-surface-alt py-32 relative">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-24 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl font-light text-[var(--color-foreground)] mb-8 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-8 tracking-tight">
             آراء عملائنا
           </h2>
-          <p className="text-lg text-[var(--color-foreground-muted)] max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-lg text-foreground-muted max-w-2xl mx-auto leading-relaxed font-light">
             اكتشف قصص النجاح من العيادات والمراكز الطبية التي عملنا معها
           </p>
         </div>

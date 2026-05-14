@@ -11,13 +11,13 @@ interface ServicesProps {
 
 export default function Services({ services }: ServicesProps) {
   return (
-    <section id="services" className="w-full bg-[var(--color-surface-alt)] py-32 relative overflow-hidden">
+    <section id="services" className="w-full bg-surface-alt py-32 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="text-center mb-24 animate-fade-in">
-          <h2 className="text-5xl md:text-6xl font-light text-[var(--color-foreground)] mb-8 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-light text-foreground mb-8 tracking-tight">
             خدماتنا المتميزة
           </h2>
-          <p className="text-lg text-[var(--color-foreground-muted)] max-w-2xl mx-auto leading-relaxed font-light">
+          <p className="text-lg text-foreground-muted max-w-2xl mx-auto leading-relaxed font-light">
             كل مشروع ناجح يحتاج خطة تسويق مدروسة، ونحن نبني استراتيجية تحقق أهدافك
           </p>
         </div>
@@ -34,12 +34,12 @@ export default function Services({ services }: ServicesProps) {
         </div>
 
         <div className="mt-24 text-center animate-slide-in-up">
-          <p className="text-[var(--color-foreground-muted)] mb-8 text-lg">
+          <p className="text-foreground-muted mb-8 text-lg">
             هل تريد معرفة المزيد عن خدماتنا؟
           </p>
           <a
             href="/services"
-            className="inline-block px-12 py-4 bg-[var(--color-primary)] text-white font-semibold rounded-sm hover:bg-[var(--color-primary-light)] transition-all duration-300 text-base tracking-wide uppercase"
+            className="inline-block px-12 py-4 bg-primary text-white font-semibold rounded-sm hover:bg-primary-light transition-all duration-300 text-base tracking-wide uppercase"
           >
             عرض جميع الخدمات
           </a>

@@ -17,9 +17,9 @@ export default function RootLayout({
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#0066CC" />
+        <meta name="theme-color" content="#1e5a4e" />
       </head>
-      <body className="bg-white text-dark">{children}</body>
+      <body className="bg-background text-foreground">{children}</body>
     </html>
   )
 }

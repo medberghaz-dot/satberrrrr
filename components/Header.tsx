@@ -27,9 +27,9 @@ export default function Header({ lang = 'ar' }: HeaderProps) {
       ];
 
   return (
-    <header className="w-full bg-white border-b border-[var(--color-border)] sticky top-0 z-50">
+    <header className="w-full bg-surface border-b border-border sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
-        <a href="/" className="text-2xl font-light tracking-wide text-[var(--color-primary)]">
+        <a href="/" className="text-2xl font-light tracking-wide text-primary">
           {logo}
         </a>
         
@@ -38,14 +38,14 @@ export default function Header({ lang = 'ar' }: HeaderProps) {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm text-[var(--color-foreground-muted)] hover:text-[var(--color-primary)] transition-colors duration-300 font-medium tracking-wide"
+              className="text-sm text-foreground-muted hover:text-primary transition-colors duration-300 font-medium tracking-wide"
             >
               {item.label}
             </a>
           ))}
         </nav>
 
-        <button className="md:hidden text-[var(--color-foreground)] text-2xl">☰</button>
+        <button className="md:hidden text-foreground text-2xl">☰</button>
       </div>
     </header>
   );

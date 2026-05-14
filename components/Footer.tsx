@@ -6,11 +6,11 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="w-full bg-[var(--color-foreground)] text-white py-16">
+    <footer className="w-full bg-foreground text-white py-16">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div>
-            <h3 className="text-2xl font-light mb-4 text-[var(--color-accent)] tracking-wide">مِراس</h3>
+            <h3 className="text-2xl font-light mb-4 text-accent tracking-wide">مِراس</h3>
             <p className="text-white opacity-70 leading-relaxed font-light">
               متخصصون في التسويق الرقمي للقطاع الطبي
             </p>
@@ -19,10 +19,10 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-6 text-base uppercase tracking-wide">الروابط السريعة</h4>
             <ul className="space-y-3 text-white opacity-70">
-              <li><a href="/" className="hover:text-[var(--color-accent)] transition-colors font-light">الرئيسية</a></li>
-              <li><a href="/services" className="hover:text-[var(--color-accent)] transition-colors font-light">الخدمات</a></li>
-              <li><a href="/testimonials" className="hover:text-[var(--color-accent)] transition-colors font-light">آراء العملاء</a></li>
-              <li><a href="/contact" className="hover:text-[var(--color-accent)] transition-colors font-light">تواصل معنا</a></li>
+              <li><a href="/" className="hover:text-accent transition-colors font-light">الرئيسية</a></li>
+              <li><a href="/services" className="hover:text-accent transition-colors font-light">الخدمات</a></li>
+              <li><a href="/testimonials" className="hover:text-accent transition-colors font-light">آراء العملاء</a></li>
+              <li><a href="/contact" className="hover:text-accent transition-colors font-light">تواصل معنا</a></li>
             </ul>
           </div>
 

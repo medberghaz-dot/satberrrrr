@@ -6,7 +6,7 @@ import { WHATSAPP_TEMPLATES } from '@/lib/whatsapp';
 
 export default function CTA() {
   return (
-    <section id="cta" className="w-full bg-[var(--color-primary)] py-32 relative overflow-hidden">
+    <section id="cta" className="w-full bg-primary py-32 relative overflow-hidden">
       <div className="max-w-4xl mx-auto px-6 text-center relative z-10 animate-fade-in">
         <h2 className="text-5xl md:text-6xl font-light text-white mb-8 leading-tight tracking-tight">
           مستعد لزيادة عدد مرضاك؟
@@ -23,7 +23,7 @@ export default function CTA() {
             variant="secondary"
             size="lg"
           />
-          <button className="px-10 py-4 border-2 border-white text-white font-semibold rounded-sm hover:bg-white hover:text-[var(--color-primary)] transition-all duration-300 text-base tracking-wide uppercase">
+          <button className="px-10 py-4 border-2 border-white text-white font-semibold rounded-sm hover:bg-white hover:text-primary transition-all duration-300 text-base tracking-wide uppercase">
             اعرف المزيد
           </button>
         </div>
